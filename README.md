@@ -2,6 +2,9 @@
 
 A hyper-realistic Next.js application simulating a phone call interface that detects fraud in real-time using OpenAI's GPT-4o.
 
+DEMO:  https://sentinel-9.vercel.app/
+INFO WEBSITE: https://v0-new-chat-weld-ten.vercel.app/
+
 ## Features
 
 - **Dual Interface**: `/scammer` and `/victim` views simulating a live phone call.
@@ -61,3 +64,30 @@ To reset the conversation history and risk score:
 1.  Go to the **Landing Page** at [http://localhost:3000](http://localhost:3000).
 2.  Click the **"Reset Simulation"** button.
 3.  This will clear the conversation memory and reset the UI state for both interfaces.
+
+
+
+
+
+Slide 2 Statistics:
+$3.1B Lost annually to scams
+
+Citation: FBI IC3 Elder Fraud Report
+Link: [https://www.ic3.gov/Media/PDF/AnnualReport/2023_IC3ElderFraudReport.pdf](https://www.ic3.gov/Media/PDF/AnnualReport/2023_IC3ElderFraudReport.pdf)
+Note: The FBI IC3 releases annual elder fraud reports. You may need to verify the exact figure for your specific year.
+
+
+
+1 in 5 Elderly adults targeted
+
+AARP Link: [https://www.aarp.org/money/scams-fraud/](https://www.aarp.org/money/scams-fraud/)
+FTC Link: [https://www.ftc.gov/news-events/data-visualizations/data-spotlight](https://www.ftc.gov/news-events/data-visualizations/data-spotlight)
+Note: AARP's Fraud Watch Network and FTC's Consumer Sentinel Network both track elder fraud statistics.
+
+
+
+66% Increase in scam calls
+
+Truecaller Link: [https://www.truecaller.com/blog/research/truecaller-insights-2023-us-spam-scam-report](https://www.truecaller.com/blog/research/truecaller-insights-2023-us-spam-scam-report)
+Alternative - First Orion: [https://firstorion.com/scam-call-trends/](https://firstorion.com/scam-call-trends/)
+Note: These companies release annual spam and scam call trend reports.
