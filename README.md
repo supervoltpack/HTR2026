@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sentinel-9: Real-Time Fraud Detection System
+
+A hyper-realistic Next.js application simulating a phone call interface that detects fraud in real-time using OpenAI's GPT-4o.
+
+## Features
+
+- **Dual Interface**: `/scammer` and `/victim` views simulating a live phone call.
+- **Real-Time Analysis**: Transcribes audio and analyzes it for scam indicators using GPT-4o.
+- **Dynamic UI**: The victim's interface reacts to the risk level, changing colors and displaying warnings.
+- **Streaming Alerts**: Suspicious phrases are highlighted and streamed in real-time.
+- **Push-to-Talk**: Realistic audio interaction.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js installed.
+- An OpenAI API Key.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/MoizDev/sentinel-9.git
+    cd sentinel-9
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3.  Set up environment variables:
+    Create a `.env.local` file in the root directory and add your OpenAI API key:
+    ```env
+    OPENAI_API_KEY=your_api_key_here
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5.  Open the application:
+    - **Landing Page**: [http://localhost:3000](http://localhost:3000)
+    - **Victim Interface**: [http://localhost:3000/victim](http://localhost:3000/victim)
+    - **Scammer Interface**: [http://localhost:3000/scammer](http://localhost:3000/scammer)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## How to Use
 
-## Deploy on Vercel
+1.  Open the **Victim** interface in one window/tab and the **Scammer** interface in another.
+2.  On either interface, **press and hold the microphone button** to speak.
+3.  Release the button to send the audio.
+4.  The system will transcribe the audio, analyze it, and update the Victim's UI if a scam is detected.
+5.  Try phrases like "You must pay with gift cards" or "This is the IRS" to trigger the warnings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Restarting a Call
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To reset the conversation history and risk score:
+
+1.  Go to the **Landing Page** at [http://localhost:3000](http://localhost:3000).
+2.  Click the **"Reset Simulation"** button.
+3.  This will clear the conversation memory and reset the UI state for both interfaces.
