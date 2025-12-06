@@ -21,8 +21,8 @@ A hyper-realistic Next.js application simulating a phone call interface that det
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/MoizDev/sentinel-9.git
-    cd sentinel-9
+    git clone https://github.com/supervoltpack/HTR2026.git
+    cd HTR2026
     ```
 
 2.  Install dependencies:
